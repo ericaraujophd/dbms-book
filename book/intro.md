@@ -1,11 +1,10 @@
-# Welcome to your Jupyter Book
+# Welcome to Databases Management Systems and SQL course
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+Welcome to Database Management, a hands-on course designed to equip you with the essential skills for designing, querying, and optimizing relational databases. Over the next seven weeks, you’ll dive into SQL, explore database structures, and gain practical experience in managing data efficiently. Whether you’re new to databases or looking to sharpen your skills, this course will provide a solid foundation for real-world applications.
 
-Check out the content pages bundled with this sample book to see more.
+Get ready to write queries, design schemas, and discover how databases power modern applications! Looking forward to an exciting and engaging learning journey with you all.
+
+See you in class!
 
 ```{tableofcontents}
 ```
