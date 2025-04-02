@@ -4,6 +4,12 @@
 format: jb-book
 root: intro
 chapters:
+- file: c01-introduction
+  sections:
+    - file: chapter01/01-relational-databases
+    - file: chapter03/c03-sXX-datamanipulation
+    # - file: chapters/01-introduction/02-what-is-a-dbms
+    # - file: chapters/01-introduction/03-why-study-dbms
 - file: markdown
 - file: notebooks
 - file: markdown-notebooks
