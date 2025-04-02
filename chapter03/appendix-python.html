@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>🧑‍🏫 Class Plan: Querying SQLite with Python + SQL for Data Manipulation and Table Design &#8212; Database Management Systems</title>
+    <title>🧑‍🏫 Week 03 Class 02 &#8212; Database Management Systems</title>
   
   
   
@@ -183,7 +183,7 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../c01-introduction.html">01 - Introduction to Databases &amp; SQL Basics</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../chapter01/01-relational-databases.html">01-relational-databases</a></li>
 <li class="toctree-l2"><a class="reference internal" href="c03-sXX-datamanipulation.html">🧠 Data Manipulation and Table Design with SQL</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">🧑‍🏫 Class Plan: Querying SQLite with Python + SQL for Data Manipulation and Table Design</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">🧑‍🏫 Week 03 Class 02</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown Files</a></li>
@@ -423,7 +423,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>🧑‍🏫 Class Plan: Querying SQLite with Python + SQL for Data Manipulation and Table Design</h1>
+    <h1>🧑‍🏫 Week 03 Class 02</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -433,15 +433,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-querying-sqlite-from-python-20-min">🔹 Part 1: Querying SQLite from Python (20 min)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-walkthrough">🧑‍💻 Code Walkthrough</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-data-manipulation-commands-20-min">🔹 Part 2: Data Manipulation Commands (20 min)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-3-table-design-and-ddl-25-min">🔹 Part 3: Table Design and DDL (25 min)</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-data-manipulation-commands-20-min">🔹 Part 1: Data Manipulation Commands (20 min)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-table-design-and-ddl-25-min">🔹 Part 2: Table Design and DDL (25 min)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#core-ddl-commands">🧱 Core DDL Commands</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-3-querying-sqlite-from-python-20-min">🔹 Part 3: Querying SQLite from Python (20 min)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-walkthrough">🧑‍💻 Code Walkthrough</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-1">Activity 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-2">Activity 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-3">Activity 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-view-example-computed-column">🔥 Advanced View Example (Computed Column)</a></li>
 </ul>
             </nav>
         </div>
@@ -453,8 +457,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="class-plan-querying-sqlite-with-python-sql-for-data-manipulation-and-table-design">
-<h1>🧑‍🏫 Class Plan: Querying SQLite with Python + SQL for Data Manipulation and Table Design<a class="headerlink" href="#class-plan-querying-sqlite-with-python-sql-for-data-manipulation-and-table-design" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="week-03-class-02">
+<h1>🧑‍🏫 Week 03 Class 02<a class="headerlink" href="#week-03-class-02" title="Link to this heading">#</a></h1>
+<p><strong>Querying SQLite with Python + SQL for Data Manipulation and Table Design</strong></p>
 <p>🕒 Duration: 65 minutes</p>
 <p>This class is split into three main parts:</p>
 <ol class="arabic simple">
@@ -462,8 +467,120 @@ document.write(`
 <li><p>Data Manipulation (DML)</p></li>
 <li><p>Table Design (DDL)</p></li>
 </ol>
-<section id="part-1-querying-sqlite-from-python-20-min">
-<h2>🔹 Part 1: Querying SQLite from Python (20 min)<a class="headerlink" href="#part-1-querying-sqlite-from-python-20-min" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
+<section id="part-1-data-manipulation-commands-20-min">
+<h2>🔹 Part 1: Data Manipulation Commands (20 min)<a class="headerlink" href="#part-1-data-manipulation-commands-20-min" title="Link to this heading">#</a></h2>
+<p>💡 Key SQL Syntax Examples (also used from Python):</p>
+<p><strong>1.	INSERT:</strong></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">grade</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;Bob&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">90</span><span class="p">);</span>
+</pre></div>
+</div>
+<p><strong>2.	UPDATE:</strong></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">UPDATE</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">grade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">95</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Bob&#39;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p><strong>3.	DELETE:</strong></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Bob&#39;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p><strong>4. REPLACE (SQLite-specific):</strong></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">REPLACE</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">grade</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">88</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>If row with id=1 exists, it’s deleted and replaced.</p>
+<p><strong>5.	UPSERT with ON CONFLICT:</strong></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">grade</span><span class="p">)</span>
+<span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">91</span><span class="p">)</span>
+<span class="k">ON</span><span class="w"> </span><span class="n">CONFLICT</span><span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="w"> </span><span class="k">DO</span><span class="w"> </span><span class="k">UPDATE</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">grade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">excluded</span><span class="p">.</span><span class="n">grade</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>This command tries to insert a new student. If a student with the same <code class="docutils literal notranslate"><span class="pre">id</span> <span class="pre">=</span> <span class="pre">1</span></code> already exists, instead of raising an error, it updates the existing row by setting its grade to 91.</p>
+<p><strong>excluded</strong> is a special keyword that refers to the values you tried to insert.</p>
+<p>Only the column(s) explicitly listed in the UPDATE SET … clause will be modified.</p>
+<div class="tip admonition">
+<p class="admonition-title">Talk to Your Neighbor</p>
+<p>It the name changed? How would we update the name as well as the grade?</p>
+</div>
+<p><strong>6.	RETURNING:</strong></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">grade</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">60</span><span class="w"> </span><span class="n">RETURNING</span><span class="w"> </span><span class="o">*</span><span class="p">;</span>
+</pre></div>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Feature</p></th>
+<th class="head"><p>SQLite</p></th>
+<th class="head"><p>PostgreSQL</p></th>
+<th class="head"><p>MySQL</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>REPLACE</p></td>
+<td><p>✅ Yes</p></td>
+<td><p>❌ No</p></td>
+<td><p>✅ Yes</p></td>
+</tr>
+<tr class="row-odd"><td><p>UPSERT</p></td>
+<td><p>✅ ON CONFLICT</p></td>
+<td><p>✅ ON CONFLICT</p></td>
+<td><p>✅ ON DUPLICATE KEY</p></td>
+</tr>
+<tr class="row-even"><td><p>RETURNING</p></td>
+<td><p>✅ (3.35+)</p></td>
+<td><p>✅</p></td>
+<td><p>✅ (8.0.19+)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="part-2-table-design-and-ddl-25-min">
+<h2>🔹 Part 2: Table Design and DDL (25 min)<a class="headerlink" href="#part-2-table-design-and-ddl-25-min" title="Link to this heading">#</a></h2>
+<section id="core-ddl-commands">
+<h3>🧱 Core DDL Commands<a class="headerlink" href="#core-ddl-commands" title="Link to this heading">#</a></h3>
+<p><strong>1.	CREATE TABLE:</strong></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">courses</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
+<span class="w">    </span><span class="n">title</span><span class="w"> </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+<span class="w">    </span><span class="n">credits</span><span class="w"> </span><span class="nb">INTEGER</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+<p><strong>2.	ALTER TABLE:</strong></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">courses</span><span class="w"> </span><span class="k">ADD</span><span class="w"> </span><span class="k">COLUMN</span><span class="w"> </span><span class="n">description</span><span class="w"> </span><span class="nb">TEXT</span><span class="p">;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>SQLite only allows adding columns, not dropping or modifying them.</p>
+</div>
+<p><strong>3.	DROP TABLE:</strong></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">DROP</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">courses</span><span class="p">;</span>
+</pre></div>
+</div>
+<p><strong>4.	CREATE INDEX:</strong></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_department</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">courses</span><span class="p">(</span><span class="n">department</span><span class="p">);</span>
+</pre></div>
+</div>
+<p><strong>5.	DROP INDEX:</strong></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">DROP</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">idx_department</span><span class="p">;</span>
+</pre></div>
+</div>
+<p><strong>6.	CREATE VIEW:</strong></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">CREATE</span><span class="w"> </span><span class="k">VIEW</span><span class="w"> </span><span class="n">cs_courses</span><span class="w"> </span><span class="k">AS</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">courses</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">department</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;CS&#39;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p><strong>7.	DROP VIEW:</strong></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">DROP</span><span class="w"> </span><span class="k">VIEW</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">cs_courses</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>SQLite views are read-only unless defined over simple queries.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="part-3-querying-sqlite-from-python-20-min">
+<h2>🔹 Part 3: Querying SQLite from Python (20 min)<a class="headerlink" href="#part-3-querying-sqlite-from-python-20-min" title="Link to this heading">#</a></h2>
 <p><strong>🎯 Goal:</strong></p>
 <p>Introduce students to running SQL commands directly from Python using the built-in sqlite3 library.</p>
 <p>🔍 Key Concepts:</p>
@@ -605,115 +722,41 @@ document.write(`
 </div>
 </section>
 </section>
-<hr class="docutils" />
-<section id="part-2-data-manipulation-commands-20-min">
-<h2>🔹 Part 2: Data Manipulation Commands (20 min)<a class="headerlink" href="#part-2-data-manipulation-commands-20-min" title="Link to this heading">#</a></h2>
-<p>💡 Key SQL Syntax Examples (also used from Python):</p>
-<p><strong>1.	INSERT:</strong></p>
-<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">grade</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;Bob&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">90</span><span class="p">);</span>
-</pre></div>
-</div>
-<p><strong>2.	UPDATE:</strong></p>
-<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">UPDATE</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">grade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">95</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Bob&#39;</span><span class="p">;</span>
-</pre></div>
-</div>
-<p><strong>3.	DELETE:</strong></p>
-<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Bob&#39;</span><span class="p">;</span>
-</pre></div>
-</div>
-<p><strong>4. REPLACE (SQLite-specific):</strong></p>
-<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">REPLACE</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">grade</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">88</span><span class="p">);</span>
-</pre></div>
-</div>
-<p>If row with id=1 exists, it’s deleted and replaced.</p>
-<p><strong>5.	UPSERT with ON CONFLICT:</strong></p>
-<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">grade</span><span class="p">)</span>
-<span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">91</span><span class="p">)</span>
-<span class="k">ON</span><span class="w"> </span><span class="n">CONFLICT</span><span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="w"> </span><span class="k">DO</span><span class="w"> </span><span class="k">UPDATE</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">grade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">excluded</span><span class="p">.</span><span class="n">grade</span><span class="p">;</span>
-</pre></div>
-</div>
-<p>This command tries to insert a new student. If a student with the same <code class="docutils literal notranslate"><span class="pre">id</span> <span class="pre">=</span> <span class="pre">1</span></code> already exists, instead of raising an error, it updates the existing row by setting its grade to 91.</p>
-<p><strong>excluded</strong> is a special keyword that refers to the values you tried to insert.</p>
-<p>Only the column(s) explicitly listed in the UPDATE SET … clause will be modified.</p>
-<div class="tip admonition">
-<p class="admonition-title">Talk to Your Neighbor</p>
-<p>It the name changed? How would we update the name as well as the grade?</p>
-</div>
-<p><strong>6.	RETURNING:</strong></p>
-<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">students</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">grade</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">60</span><span class="w"> </span><span class="n">RETURNING</span><span class="w"> </span><span class="o">*</span><span class="p">;</span>
-</pre></div>
-</div>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Feature</p></th>
-<th class="head"><p>SQLite</p></th>
-<th class="head"><p>PostgreSQL</p></th>
-<th class="head"><p>MySQL</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>REPLACE</p></td>
-<td><p>✅ Yes</p></td>
-<td><p>❌ No</p></td>
-<td><p>✅ Yes</p></td>
-</tr>
-<tr class="row-odd"><td><p>UPSERT</p></td>
-<td><p>✅ ON CONFLICT</p></td>
-<td><p>✅ ON CONFLICT</p></td>
-<td><p>✅ ON DUPLICATE KEY</p></td>
-</tr>
-<tr class="row-even"><td><p>RETURNING</p></td>
-<td><p>✅ (3.35+)</p></td>
-<td><p>✅</p></td>
-<td><p>✅ (8.0.19+)</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<section id="activity-1">
+<h2>Activity 1<a class="headerlink" href="#activity-1" title="Link to this heading">#</a></h2>
+<p>Create a New Table for Courses</p>
+<p>Create a courses table with:</p>
+<ul class="simple">
+<li><p>id (PK)</p></li>
+<li><p>title</p></li>
+<li><p>credits</p></li>
+</ul>
 </section>
-<section id="part-3-table-design-and-ddl-25-min">
-<h2>🔹 Part 3: Table Design and DDL (25 min)<a class="headerlink" href="#part-3-table-design-and-ddl-25-min" title="Link to this heading">#</a></h2>
-<section id="core-ddl-commands">
-<h3>🧱 Core DDL Commands<a class="headerlink" href="#core-ddl-commands" title="Link to this heading">#</a></h3>
-<p><strong>1.	CREATE TABLE:</strong></p>
-<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">courses</span><span class="w"> </span><span class="p">(</span>
-<span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
-<span class="w">    </span><span class="n">title</span><span class="w"> </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
-<span class="w">    </span><span class="n">credits</span><span class="w"> </span><span class="nb">INTEGER</span>
-<span class="p">);</span>
-</pre></div>
-</div>
-<p><strong>2.	ALTER TABLE:</strong></p>
-<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">courses</span><span class="w"> </span><span class="k">ADD</span><span class="w"> </span><span class="k">COLUMN</span><span class="w"> </span><span class="n">description</span><span class="w"> </span><span class="nb">TEXT</span><span class="p">;</span>
-</pre></div>
-</div>
+<section id="activity-2">
+<h2>Activity 2<a class="headerlink" href="#activity-2" title="Link to this heading">#</a></h2>
+<p>Create a view high_achievers that shows students with grade ≥ 90.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>SQLite only allows adding columns, not dropping or modifying them.</p>
+<p>A view is a virtual table that stores the result of a SQL query.
+It doesn’t store data itself — it just runs the underlying query whenever you access it.</p>
 </div>
-<p><strong>3.	DROP TABLE:</strong></p>
-<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">DROP</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">courses</span><span class="p">;</span>
-</pre></div>
-</div>
-<p><strong>4.	CREATE INDEX:</strong></p>
-<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_department</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">courses</span><span class="p">(</span><span class="n">department</span><span class="p">);</span>
-</pre></div>
-</div>
-<p><strong>5.	DROP INDEX:</strong></p>
-<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">DROP</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">idx_department</span><span class="p">;</span>
-</pre></div>
-</div>
-<p><strong>6.	CREATE VIEW:</strong></p>
-<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">CREATE</span><span class="w"> </span><span class="k">VIEW</span><span class="w"> </span><span class="n">cs_courses</span><span class="w"> </span><span class="k">AS</span>
-<span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">courses</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">department</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;CS&#39;</span><span class="p">;</span>
-</pre></div>
-</div>
-<p><strong>7.	DROP VIEW:</strong></p>
-<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">DROP</span><span class="w"> </span><span class="k">VIEW</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">cs_courses</span><span class="p">;</span>
-</pre></div>
-</div>
-<p>SQLite views are read-only unless defined over simple queries.</p>
 </section>
+<section id="activity-3">
+<h2>Activity 3<a class="headerlink" href="#activity-3" title="Link to this heading">#</a></h2>
+<p>Query a view just like a table</p>
+</section>
+<section id="advanced-view-example-computed-column">
+<h2>🔥 Advanced View Example (Computed Column)<a class="headerlink" href="#advanced-view-example-computed-column" title="Link to this heading">#</a></h2>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">CREATE</span><span class="w"> </span><span class="k">VIEW</span><span class="w"> </span><span class="n">student_status</span><span class="w"> </span><span class="k">AS</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">grade</span><span class="p">,</span>
+<span class="w">       </span><span class="k">CASE</span><span class="w"> </span><span class="k">WHEN</span><span class="w"> </span><span class="n">grade</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">60</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="s1">&#39;Pass&#39;</span><span class="w"> </span><span class="k">ELSE</span><span class="w"> </span><span class="s1">&#39;Fail&#39;</span><span class="w"> </span><span class="k">END</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">status</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">students</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>To query it:</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">student_status</span><span class="p">;</span>
+</pre></div>
+</div>
 </section>
 </section>
 
@@ -781,15 +824,19 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-querying-sqlite-from-python-20-min">🔹 Part 1: Querying SQLite from Python (20 min)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-walkthrough">🧑‍💻 Code Walkthrough</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-data-manipulation-commands-20-min">🔹 Part 2: Data Manipulation Commands (20 min)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-3-table-design-and-ddl-25-min">🔹 Part 3: Table Design and DDL (25 min)</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-data-manipulation-commands-20-min">🔹 Part 1: Data Manipulation Commands (20 min)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-table-design-and-ddl-25-min">🔹 Part 2: Table Design and DDL (25 min)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#core-ddl-commands">🧱 Core DDL Commands</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-3-querying-sqlite-from-python-20-min">🔹 Part 3: Querying SQLite from Python (20 min)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-walkthrough">🧑‍💻 Code Walkthrough</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-1">Activity 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-2">Activity 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-3">Activity 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-view-example-computed-column">🔥 Advanced View Example (Computed Column)</a></li>
 </ul>
   </nav></div>
 
