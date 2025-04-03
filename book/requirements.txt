@@ -10,7 +10,7 @@ pillow==11.1.0
 pyparsing==3.2.1
 python-dateutil==2.9.0.post0
 ghp-import>=2.1.0
-ipython-sql>=0.5.0
+ipython-sql
 jupyter-book>=1.0.4.post1
 sqlalchemy>=2.0.40
 six==1.17.0
