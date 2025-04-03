@@ -166,6 +166,7 @@ dependencies = [
     { name = "ghp-import" },
     { name = "ipython-sql" },
     { name = "jupyter-book" },
+    { name = "sqlalchemy" },
 ]
 
 [package.metadata]
@@ -173,6 +174,7 @@ requires-dist = [
     { name = "ghp-import", specifier = ">=2.1.0" },
     { name = "ipython-sql", specifier = ">=0.5.0" },
     { name = "jupyter-book", specifier = ">=1.0.4.post1" },
+    { name = "sqlalchemy", specifier = ">=2.0.40" },
 ]
 
 [[package]]
