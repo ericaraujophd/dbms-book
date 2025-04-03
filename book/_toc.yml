@@ -2,14 +2,18 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: home
 chapters:
-- file: c01-introduction
+- file: introduction
   sections:
-    - file: chapter01/01-relational-databases
-    - file: notebooks/c03-sXX-datamanipulation
+    - file: chp01-intro/01-what-is-this-course-about
+    - file: chp01-intro/02-content
+    - file: chp01-intro/03-course-policies
+    - file: chp01-intro/04-extra-resources
+- file: notebooks/c03-sXX-datamanipulation
     # - file: chapters/01-introduction/02-what-is-a-dbms
     # - file: chapters/01-introduction/03-why-study-dbms
 - file: notebooks/w03c02
-- file: notebooks
+- file: notebooks/temp
 - file: markdown-notebooks
+- file: markdown

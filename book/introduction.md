@@ -8,3 +8,4 @@ At the end of this unit, students will be able to…
 4. Sort the result set in ascending and descending order using `ORDER BY`.
 5. Filter data according to various conditions using `DISTINCT`, `WHERE`, `AND`, `OR`, `LIMIT/OFFSET`, `BETWEEN`, `IN`, `LIKE` and `ILIKE`, `GLOB` and `IS NULL`.
 6. Analyze a dataset using simple queries.
+
