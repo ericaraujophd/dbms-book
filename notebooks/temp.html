@@ -60,6 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/temp';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Notebooks with MyST Markdown" href="../markdown-notebooks.html" />
     <link rel="prev" title="🧑‍🏫 Week 03 Class 02" href="w03c02.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -181,6 +182,7 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../introduction.html">01 - Introduction to Databases &amp; SQL Basics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../chp01-intro/01-what-is-this-course-about.html">What is this course about?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chp01-intro/02-content.html">Contents</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chp01-intro/03-course-policies.html">Course Policies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chp01-intro/04-extra-resources.html">Extra Resources</a></li>
 </ul>
@@ -188,6 +190,8 @@
 <li class="toctree-l1"><a class="reference internal" href="c03-sXX-datamanipulation.html">🧠 Data Manipulation and Table Design with SQL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w03c02.html">🧑‍🏫 Week 03 Class 02</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Temp NB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown Files</a></li>
 </ul>
 
     </div>
@@ -466,11 +470,13 @@ INSERT INTO products (name, price) VALUES
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> * sqlite:///products.db
-Done.
-5 rows affected.
-</pre></div>
-</div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[]
+(sqlite3.OperationalError) table products already exists
+[SQL: CREATE TABLE products (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    price REAL
+);]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
 </pre></div>
 </div>
 </div>
@@ -515,6 +521,15 @@ Done.
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">🧑‍🏫 Week 03 Class 02</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="../markdown-notebooks.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
